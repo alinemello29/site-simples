@@ -1,0 +1,96 @@
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  html {
+    background-color: #000000;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
+  }
+  
+  .acordeon {
+    width: 700px;
+    height: 400px;
+  
+    background: #fcfcfc;
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+  
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .acordeon .ilustracao {
+    position: absolute;
+    left: -90px;
+  }
+  
+  .acordeon .conteudo {
+    width: 90%;
+    padding-left: 220px;
+  }
+  
+  .acordeon .conteudo h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  
+  .acordeon .items {
+    list-style: none;
+  }
+  
+  .acordeon .items .item {
+    cursor: pointer;
+    background-image: url(icone-seta-fechada.png);
+    background-repeat: no-repeat;
+    background-position: top 8px right 0;
+    background-size: 12px;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+  }
+  
+  .acordeon .items .item:last-child{
+    border-bottom: none;
+  }
+  
+  .acordeon .items .item .pergunta{
+   padding-bottom: 15px;
+   transition: 0.2s ease;
+   font-size: 17px;
+   width: 90%;
+   font-weight: 500;
+  }
+  
+  .acordeon .items .item .pergunta:hover{
+    color: #f17f15;
+  }
+  
+  .acordeon .items .item .resposta{
+    display: none; 
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  /* ESTILOS DE ITEM acordeon ATIVO  */
+  
+  .acordeon .items .item.ativo h2{
+    font-weight: 700;
+    font-size: 17px;
+  }
+  
+  .acordeon .items .item.ativo .resposta{
+    display: block;
+  }
+  
+  .acordeon .items .item.ativo {
+    background-image: url(icone-seta-aberta.png);
+  }
