@@ -49,7 +49,7 @@ body {
   
   .acordeon .items .item {
     cursor: pointer;
-    background-image: url(icone-seta-fechada.png);
+    background-image: url(imagem/icone-seta-aberta.png);
     background-repeat: no-repeat;
     background-position: top 8px right 0;
     background-size: 12px;
@@ -92,5 +92,5 @@ body {
   }
   
   .acordeon .items .item.ativo {
-    background-image: url(icone-seta-aberta.png);
+    background-image: url(imagem/icone-seta-aberta.png);
   }
